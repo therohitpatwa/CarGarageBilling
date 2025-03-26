@@ -51,13 +51,11 @@ public class GarageService {
             System.out.println("Enter Service number to add or 0 to finish");
             int choice=sc.nextInt();
             if(choice==0) break;
-            if(choice>0 && choice<=availableService.size())
-            {
-                invoice.addService(availableService.get(choice-1));
-                System.out.println("Service Done.");
-            }
-            else {
+            if (choice <= 0 || choice > availableService.size()) {
                 System.out.println("Invalid Choice.");
+            } else {
+                invoice.addService(availableService.get(choice - 1));
+                System.out.println("Service Done.");
             }
 
         }

@@ -28,6 +28,7 @@ public class Invoice {
         {
             System.out.println((i+1)+" "+serviceList.get(i).getName() +": ₹"+serviceList.get(i).getPrice());
         }
+        System.out.println("-------------------------------------");
         System.out.println("Total Amount: ₹"+totalAmount);
         System.out.println();
         System.out.println("-------------Thank You---------------");
