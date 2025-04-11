@@ -2,7 +2,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class GarageService {
-    private Map<String,Customer> customersMap;
+    private Map<String,Customer> customersMap;    //for connecting carnumber and customer
     private List<Service> availableService;
 
     public GarageService() throws FileNotFoundException
@@ -43,7 +43,7 @@ public class GarageService {
         for (int i=0;i<availableService.size();i++)
         {
             System.out.println((i+1)+". "+availableService.get(i).getName()
-                    + " - ₹"+availableService.get(i).getPrice());
+                    + " - \u20B9"+availableService.get(i).getPrice());
         }
 
         while (true)
